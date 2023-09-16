@@ -317,13 +317,12 @@ color: rgb(30,152,255);
 `
 var title1 = '雪猫の主页'
 var title2 = `
- __  __   ______ 
- \ \/ /  |  \/  |
-  \  /   | \  / |
-  /  \   | |\/| |
- / /\ \  | |  | |
-/_/  \_\ |_|  |_| 
-
+   __   __     ________
+   \\ \\ / /    | \\    / |
+    \\   /     |  \\  /  |
+    /   \\     | | \\/ | |
+   / / \\ \\    | |    | |
+  /_/   \\_\\   |_|    |_| 
 `
 var content = `
 版 本 号：3.0
@@ -339,5 +338,14 @@ var content = `
 主页:  https://xm.sx7.top
 Github:  https://github.com/xm666xm666
 `
+/*
+ __  __    ____  
+ \ \/ /  |  \/  |
+  \  /   | \  / |
+  /  \   | |\/| |
+ / /\ \  | |  | |
+/_/  \_\ |_|  |_| 
+
+*/
 console.log(`%c${title1} %c${title2}
 %c${content}`, styleTitle1, styleTitle2, styleContent)

@@ -21,7 +21,7 @@ function getBgImg() {
 }
 
 var bg_img_preinstall = {
-    "type": "1", // 1:默认背景 2:每日一图 3:随机风景 4:随机动漫 ;3,4不可用。
+    "type": "1", // 1:默认背景 2:每日一图 3:随机风景 4:随机动漫 ;
     "path": "", //自定义图片
 };
 
@@ -51,10 +51,10 @@ function setBgImgInit() {
             $('#bg').attr('src', 'https://api.dujin.org/bing/1920.php'); //必应每日
             break;
         case "3":
-            $('#bg').attr('src', 'https://api.ixiaowai.cn/gqapi/gqapi.php'); //随机风景
+            $('#bg').attr('src', 'https://api.r10086.com/樱道随机图片api接口.php?图片系列=风景系列9'); //随机风景
             break;
         case "4":
-            $('#bg').attr('src', 'https://api.ixiaowai.cn/api/api.php'); //随机动漫
+            $('#bg').attr('src', 'https://api.r10086.com/樱道随机图片api接口.php?图片系列=P站系列1'); //随机动漫(16+)
             break;
     }
 }
@@ -98,7 +98,7 @@ $(document).ready(function () {
 
         if (type === "3") {
             setBgImg(bg_img);
-            $('#bg').attr('src', 'https://api.ixiaowai.cn/gqapi/gqapi.php'); //随机风景
+            $('#bg').attr('src', 'https://api.r10086.com/樱道随机图片api接口.php?图片系列=风景系列9'); //随机风景
             iziToast.show({
                 message: '壁纸设置成功',
             });
@@ -106,7 +106,7 @@ $(document).ready(function () {
 
         if (type === "4") {
             setBgImg(bg_img);
-            $('#bg').attr('src', 'https://api.ixiaowai.cn/api/api.php'); //随机动漫
+            $('#bg').attr('src', 'https://api.r10086.com/樱道随机图片api接口.php?图片系列=P站系列1'); //随机动漫(16+)
             iziToast.show({
                 message: '壁纸设置成功',
             });
